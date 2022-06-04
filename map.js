@@ -3,18 +3,22 @@ const locDic = {
     'link': './images/Craggy Gardens 6-4-22.jpg',
     'date': 'June 4, 2022',
     'photog': 'Evan Fisher',
+    'handle': 'https://twitter.com/EFisherWX',
     'loc': [35.7003, -82.3796]
-  },
-  "Grassy Ridge Bald - 6100'": {
-    'link': 'https://bloximages.chicago2.vip.townnews.com/averyjournal.com/content/tncms/assets/v3/editorial/2/93/29392452-99f6-59a4-8cdf-d537d4347068/5745db0854175.image.jpg',
-    'date': 'June 4, 2022',
-    'loc': [36.0998, -82.0804]
   },
   "Inspiration Point - 4700'": {
     'link': './images/Inspiration Point 5-30-22.jpg',
     'date': 'May 30, 2022',
     'photog': 'Billy Bowling',
+    'handle': 'https://twitter.com/babowling12',
     'loc': [35.6361, -83.4424]
+  },
+  "Private Property - 3800'": {
+    'link': './images/Private 5-27-22.jpg',
+    'date': 'May 27, 2022',
+    'photog': 'Evan Fisher',
+    'handle': 'https://twitter.com/EFisherWX',
+    'loc': [35.5564, -82.4527]
   },
 }
 
@@ -27,7 +31,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map
 
 let name;
 for (let key in locDic){
-  L.marker(locDic[key]['loc']).addTo(map).bindPopup(`<center><h2>${key}</h2><h3>${locDic[key]['date']} - ${locDic[key]['photog']}</h3><div id='imgDiv'><img src='${locDic[key]['link']}' style='width:500px;z-index:0;' id='${key}'></img></div></center>`, {maxWidth: "auto"});
+  L.marker(locDic[key]['loc']).addTo(map).bindPopup(`<center><h2>${key}</h2><h3>${locDic[key]['date']} - <a href='${locDic[key]['handle']}' target='_blank'>${locDic[key]['photog']}</a></h3><div id='imgDiv'><img src='${locDic[key]['link']}' style='width:500px;z-index:0;' id='${key}'></img></div></center>`, {maxWidth: "auto"});
 }
 
 //let m1 = L.marker([35.7003, -82.3796]).addTo(map);
