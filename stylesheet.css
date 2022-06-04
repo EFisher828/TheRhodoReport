@@ -1,0 +1,21 @@
+body {
+  font-family:Arial;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  width: 80%;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.textDiv {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+}
