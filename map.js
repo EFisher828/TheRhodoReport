@@ -31,7 +31,7 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map
 
 let name;
 for (let key in locDic){
-  L.marker(locDic[key]['loc']).addTo(map).bindPopup(`<center><h2>${key}</h2><h3>${locDic[key]['date']} - <a href='${locDic[key]['handle']}' target='_blank'>${locDic[key]['photog']}</a></h3><div id='imgDiv'><img src='${locDic[key]['link']}' style='width:500px;z-index:0;' id='${key}'></img></div></center>`, {maxWidth: "auto"});
+  L.marker(locDic[key]['loc']).addTo(map).bindPopup(`<center><h2>${key}</h2><h3>${locDic[key]['date']} - <a href='${locDic[key]['handle']}' target='_blank'>${locDic[key]['photog']}</a></h3><img src='${locDic[key]['link']}' style='width:400px;z-index:0;' id='${key}'></img></center>`, {maxWidth: "auto"});
 }
 
 //let m1 = L.marker([35.7003, -82.3796]).addTo(map);
