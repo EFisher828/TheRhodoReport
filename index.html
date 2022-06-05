@@ -2,12 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@RhodoReport" />
+    <meta name="twitter:title" content="The Rhodo Report" />
+    <meta name="twitter:description" content="Rhododendron and mountain laurel bloom reports." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/EFisher828/TheRhodoReport/main/images/Private%205-27-22.jpg" />
+
+    <meta name="description" content="Rhododendron and mountain laurel bloom reports in the southern Appalachian Mountains.">
+    <meta name="keywords" content="rhododendron, mountain laurel, rhodo, Asheville, bloom, reports, interactive, Blue Ridge Mountains,">
     <title>The Rhodo Report</title>
 
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="icon" href="./Profile Flower.png">
   </head>
   <body>
     <div class='textDiv'>
@@ -15,15 +23,15 @@
       <p style="padding-bottom:3%;padding-top:1%;">The only collection of real time rhododendron and mountain laurel bloom reports across the southern Appalachian Mountains. To submit a report, please tag us in your tweets or send us an email (rhodoreports@gmail.com) with a photo of the blooms and some information about where the photo was taken. Other submission methods will be availble soon. Happy bloom chasing!</p>
     </div>
     <div id="map"></div>
-
+    <hr style="width:80%;margin-top:4%;margin-bottom:4%;margin-left:auto;margin-right:auto;display:block;">
     <div class="featured">
-      <h2 style="padding-top:4%;">Photo of the Week</h2>
-      <p style="padding-bottom:2%;">Captured by <a href="https://twitter.com/babowling12">Billy Bowling</a> at Inspiration Point, TN on May 30th.</p>
+      <h2>Photo of the Week</h2>
+      <p style="padding-bottom:2%;">Captured by <a href="https://twitter.com/babowling12" target="_blank">Billy Bowling</a> at Inspiration Point, TN on May 30th.</p>
       <img src="./images/Inspiration Point 5-30-22.jpg" width="50%">
     </div>
   </body>
   <footer>
-    <p style="padding-top:10%;">Find us on Twitter (@RhodoReport) or send an email (rhodoreport@gmail.com)   ||   © Evan Fisher 2022</p>
+    <p style="padding-top:7%;">Find us on Twitter (@RhodoReport) or send an email (rhodoreport@gmail.com)   ||   © Evan Fisher 2022</p>
   </footer>
   <script type="text/javascript" src="./map.js"></script>
 </html>
