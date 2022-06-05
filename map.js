@@ -20,6 +20,13 @@ const locDic = {
     'handle': 'https://twitter.com/EFisherWX',
     'loc': [35.5564, -82.4527]
   },
+  "UNC Asheville - 2100'": {
+    'link': './images/Null UNCA 6-5-22.jpg',
+    'date': 'June 5, 2022',
+    'photog': 'Kyle Noel',
+    'handle': 'https://twitter.com/KyleNoelWx',
+    'loc': [35.6162, -82.5662]
+  },
 }
 
 const map = L.map('map').setView([35.77651938476333, -82.62112321657582], 10);
